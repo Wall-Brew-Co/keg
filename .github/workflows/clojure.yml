@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install dependencies
       run: lein deps
-    - name: Run Clojure tests
-      run: lein test
+    - name: Compile application
+      run: lein uberjar
