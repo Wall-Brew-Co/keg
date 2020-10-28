@@ -1,6 +1,6 @@
-(defproject com.wallbrew/{{template}} "1.0.0"
+(defproject com.wallbrew/keg "1.0.0"
   :description "TODO: Fill me in!"
-  :url "https://github.com/Wall-Brew-Co/{{template}}"
+  :url "https://github.com/Wall-Brew-Co/keg"
   :license {:name "MIT"
             :url  "https://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.10.0"]]

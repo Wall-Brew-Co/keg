@@ -1,3 +1,4 @@
+.PHONY: version/major version/minor version/bugfix version
 
 MAKE = make
 LEIN = lein
