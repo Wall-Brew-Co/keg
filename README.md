@@ -1,6 +1,6 @@
 # keg
 
-A Wall Brew infrastructure library to monitor function performance.
+A Wall Brew infrastructure library to monitor function performance in clojure applications.
 wb-metrics measures the time it takes functions to execute, uses `clojure/tools.logging` to emit debug statements.
 
 ## Dependency
@@ -26,11 +26,12 @@ Then, tap the function definitions you want runtime statistics for:
   [arg1 arg2]
   (+ arg1 arg2))
 
-(keg/tap my-awesome-function)
+(keg/tap #'my-awesome-function)
 ```
 
 This creates a hook for your function.
 Every time it executes, it'll log some data via `clojure/tools.logging` through whatever logging provider your project uses.
+Be sure to prefix the function name with `#'` otherwise you'll encounter errors that state your functions are unnamed modules in the DynamicClassLoader.
 
 For example:
 
@@ -42,11 +43,11 @@ For example:
 If you want pour extra data, you can use some of the provided formatters:
 
 ```clojure
-(keg/tap my-awesome-function keg/pour-runtime-and-args)
+(keg/tap #'my-awesome-function keg/pour-runtime-and-args)
 (my-awesome-function 3 5)
 ;=> 2020-10-28T17:21:25.959Z my-machine-id DEBUG [my-app.core/my-awesome-function] - {:function-name my-awesome-function, :runtime 1, :arguments [3 5]}
 
-(keg/tap my-awesome-function keg/pour-runtime-args-and-return)
+(keg/tap #'my-awesome-function keg/pour-runtime-args-and-return)
 (my-awesome-function 3 5)
 ;=> 2020-10-28T17:21:25.959Z my-machine-id DEBUG [my-app.core/my-awesome-function] - {:function-name my-awesome-function, :runtime 1, :arguments [3 5], :return-value 8}
 ```
@@ -60,7 +61,7 @@ Or, you can always write your own:
    :runtime  runtime
    :args     args})
 
-(keg/tap my-awesome-function my-awesome-formatter)
+(keg/tap #'my-awesome-function my-awesome-formatter)
 (my-awesome-function 3 5)
 ;=> 2020-10-28T17:21:25.959Z my-machine-id DEBUG [my-app.core/my-awesome-function] - {:app-port 8080, :runtime 1, :args [3 5]}
 ```
