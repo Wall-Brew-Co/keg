@@ -1,0 +1,9 @@
+dotfiles:
+  - .github/**/*
+  - .gitignore
+  - .editorconfig
+
+restricted:
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - LICENSE
