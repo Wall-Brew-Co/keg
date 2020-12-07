@@ -36,6 +36,6 @@
                             (throw t)))
         runtime         (int (/ (- (System/nanoTime) start) 1000000))
         function-name   (name-path->qualified-name name-path)]
-    (log/log ns' :debug nil (apply format-fn function-name runtime function-return args))
+    (log/log ns' :info nil (apply format-fn function-name runtime function-return args))
     (send-elapsed (metric-path "timing") runtime)
     function-return))
