@@ -1,6 +1,6 @@
 name: Clojure CI
 
-on: [push]
+on: ["push", "workflow_dispatch"]
 
 jobs:
   build:
@@ -9,7 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2.3.4
+
     - name: Install dependencies
       run: lein deps
+
     - name: Compile application
       run: lein uberjar
