@@ -6,20 +6,24 @@
             [metrics.timers :as timer])
   (:import (java.util.concurrent TimeUnit)))
 
+
 (def mark-meter
   "Sends a meter metric for a given metric name."
   (comp meter/mark! meter/meter))
+
 
 (defn- send-elapsed
   "Sends a timer metric for a given metric name and elapsed milliseconds."
   [metric-name millis]
   (.update (timer/timer metric-name) millis TimeUnit/MILLISECONDS))
 
-(defn- name-path->qualified-name
+
+(defn name-path->qualified-name
   [name-path]
   (format "%s/%s"
           (cs/join "." (butlast name-path))
           (last name-path)))
+
 
 (defn log-function-timing
   "Logs the execution time of a given function.

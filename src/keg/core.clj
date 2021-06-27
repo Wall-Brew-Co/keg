@@ -20,12 +20,14 @@
   {:function-name function-name
    :runtime       runtime})
 
+
 (defn pour-runtime-and-args
   "Returns a map to log the function name, runtime, and the arguments list."
   [function-name runtime _ & args]
   {:function-name function-name
    :runtime       runtime
    :arguments     args})
+
 
 (defn pour-runtime-args-and-return
   "Returns a map to log the function name, runtime, and the arguments list."
@@ -34,6 +36,7 @@
    :runtime       runtime
    :arguments     args
    :return-value  return})
+
 
 (defn tap
   "Adds a hook to `target-function` to collect and log execution time.
