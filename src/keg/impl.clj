@@ -15,7 +15,7 @@
   [metric-name millis]
   (.update (timer/timer metric-name) millis TimeUnit/MILLISECONDS))
 
-(defn- name-path->qualified-name
+(defn name-path->qualified-name
   [name-path]
   (format "%s/%s"
           (cs/join "." (butlast name-path))
