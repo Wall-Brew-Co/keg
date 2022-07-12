@@ -3,7 +3,7 @@
   :url "https://github.com/Wall-Brew-Co/keg"
   :license {:name "MIT"
             :url  "https://opensource.org/licenses/MIT"}
-  :dependencies [[org.clojure/clojure "1.10.3"]
+  :dependencies [[org.clojure/clojure "1.11.1"]
                  [org.clojure/tools.logging "1.2.4"]
                  [metrics-clojure "2.10.0"]
                  [robert/hooke "1.3.0"]]
