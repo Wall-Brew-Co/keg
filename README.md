@@ -3,6 +3,8 @@
 A Wall Brew infrastructure library to monitor function performance in clojure applications.
 wb-metrics measures the time it takes functions to execute, uses `clojure/tools.logging` to emit debug statements.
 
+This repository follows the guidelines and standards of the [Wall Brew Open Source Policy.](https://github.com/Wall-Brew-Co/open-source "Our open source guidelines")
+
 ## Dependency
 
 Add the library to your `:dependencies`:
