@@ -77,6 +77,6 @@ When writing your own formatters, please note the following:
 
 ## License
 
-Copyright © 2019-2022 - [Wall Brew Co](https://wallbrew.com/)
+Copyright - [Wall Brew Co](https://wallbrew.com/)
 
 This software is provided for free, public use as outlined in the [MIT License](https://github.com/Wall-Brew-Co/keg/blob/master/LICENSE)
