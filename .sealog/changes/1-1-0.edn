@@ -1,0 +1,11 @@
+{:version      {:major 1
+                :minor 1
+                :patch 0}
+ :version-type :semver3
+ :changes      {:added      []
+                :changed    ["This release updates the logging level to `:info`"]
+                :deprecated []
+                :removed    []
+                :fixed      []
+                :security   []}
+ :timestamp    "2020-12-07T13:13:42.289293700Z"}
