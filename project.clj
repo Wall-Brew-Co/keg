@@ -16,5 +16,10 @@
             [lein-project-version "0.1.0"]
             [mvxcvi/cljstyle "0.15.0"]
             [ns-sort "1.0.3"]]
+  :deploy-branches ["master"]
+  :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
+                                    :username      :env/clojars_user
+                                    :password      :env/clojars_pass
+                                    :sign-releases false}]]
   :profiles {:uberjar {:aot :all}}
   :min-lein-version "2.5.3")
