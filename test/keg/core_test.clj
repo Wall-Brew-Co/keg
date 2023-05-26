@@ -1,6 +1,6 @@
 (ns keg.core-test
-  (:require [keg.core :as sut]
-            [clojure.test :as t]))
+  (:require [clojure.test :as t]
+            [keg.core :as sut]))
 
 
 (t/deftest formatters-test

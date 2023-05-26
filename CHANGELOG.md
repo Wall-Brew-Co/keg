@@ -6,8 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## Table of Contents
 
+* [1.1.1 - 2023-05-26](#111---2023-05-26)
 * [1.1.0 - 2020-12-07](#110---2020-12-07)
 * [1.0.0 - 2020-12-01](#100---2020-12-01)
+
+## 1.1.1 - 2023-05-26
+
+* Fixed
+  * Added annotative metadata to functions and namespaces to hide the implementation better.
 
 ## 1.1.0 - 2020-12-07
 

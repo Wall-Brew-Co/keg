@@ -1,6 +1,9 @@
 (ns keg.impl
   "Namespace for function instrumentation implementation."
-  (:require [clojure.string :as cs]
+  {:no-doc              true
+   :implementation-only true
+   :added               "1.0"}
+  (:require [clojure.string :as str]
             [clojure.tools.logging :as log]
             [metrics.meters :as meter]
             [metrics.timers :as timer])
@@ -19,9 +22,10 @@
 
 
 (defn name-path->qualified-name
+  "Converts a name path vector to a qualified name string."
   [name-path]
   (format "%s/%s"
-          (cs/join "." (butlast name-path))
+          (str/join "." (butlast name-path))
           (last name-path)))
 
 

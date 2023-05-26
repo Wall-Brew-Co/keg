@@ -1,6 +1,6 @@
 (ns keg.impl-test
-  (:require [keg.impl :as sut]
-            [clojure.test :as t]))
+  (:require [clojure.test :as t]
+            [keg.impl :as sut]))
 
 
 (t/deftest name-path->qualified-name-test
