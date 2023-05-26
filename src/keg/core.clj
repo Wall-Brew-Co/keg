@@ -1,7 +1,7 @@
 (ns keg.core
   "Public API for the library"
-  (:require [clojure.string :as cs]
-            [keg.impl :as impl]
+  (:require [keg.impl :as impl]
+            [clojure.string :as cs]
             [robert.hooke :as hook]))
 
 ;; Formatters
