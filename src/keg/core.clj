@@ -1,7 +1,8 @@
 (ns keg.core
-  "Public API for the library"
-  (:require [keg.impl :as impl]
-            [clojure.string :as cs]
+  "Public API for the library."
+  {:added "1.0"}
+  (:require [clojure.string :as str]
+            [keg.impl :as impl]
             [robert.hooke :as hook]))
 
 ;; Formatters
@@ -16,6 +17,7 @@
 
 (defn pour-runtime
   "Returns a map to log the function name and runtime."
+  {:added "1.0"}
   [function-name runtime _ & _]
   {:function-name function-name
    :runtime       runtime})
@@ -23,6 +25,7 @@
 
 (defn pour-runtime-and-args
   "Returns a map to log the function name, runtime, and the arguments list."
+  {:added "1.0"}
   [function-name runtime _ & args]
   {:function-name function-name
    :runtime       runtime
@@ -31,6 +34,7 @@
 
 (defn pour-runtime-args-and-return
   "Returns a map to log the function name, runtime, and the arguments list."
+  {:added "1.0"}
   [function-name runtime return & args]
   {:function-name function-name
    :runtime       runtime
@@ -38,14 +42,20 @@
    :return-value  return})
 
 
+#_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
 (defn tap
   "Adds a hook to `target-function` to collect and log execution time.
-   A formatter may be additionally supplied."
+   A formatter may be additionally supplied.
+
+   By default, the `pour-runtime` formatter is used."
+  {:added    "1.0"
+   :see-also ["pour-runtime" "pour-runtime-and-args" "pour-runtime-args-and-return"]}
   ([target-function]
    (tap target-function pour-runtime))
 
   ([target-function formatter]
-   (let [{function-name :name namespace :ns} (meta target-function)
-         qualified-name                      (conj (cs/split (str namespace) #"\.") (str function-name))
-         logging-fn                          (fn [f & args] (apply impl/log-function-timing namespace formatter qualified-name f args))]
+   (let [{function-name :name
+          namespace'    :ns} (meta target-function)
+         qualified-name                        (conj (str/split (str namespace') #"\.") (str function-name))
+         logging-fn                            (fn [f & args] (apply impl/log-function-timing namespace' formatter qualified-name f args))]
      (hook/add-hook target-function ::tap logging-fn))))
