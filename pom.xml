@@ -18,7 +18,7 @@
     <url>https://github.com/Wall-Brew-Co/keg</url>
     <connection>scm:git:git://github.com/Wall-Brew-Co/keg.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/Wall-Brew-Co/keg.git</developerConnection>
-    <tag>a9ff32ca9c06fe7c8ca42213d4cf6872566b7201</tag>
+    <tag>ed2b084f50a6a2f74c1b86a193af93b091819575</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
