@@ -43,6 +43,8 @@
 
 
 #_{:clj-kondo/ignore [:clojure-lsp/unused-public-var]}
+
+
 (defn tap
   "Adds a hook to `target-function` to collect and log execution time.
    A formatter may be additionally supplied.
