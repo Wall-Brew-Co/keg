@@ -11,7 +11,7 @@
                  [org.clojure/tools.logging "1.2.4"]
                  [metrics-clojure "2.10.0"]
                  [robert/hooke "1.3.0"]]
-  :plugins [[com.github.clj-kondo/lein-clj-kondo "2023.09.07"]
+  :plugins [[com.github.clj-kondo/lein-clj-kondo "2023.12.15"]
             [com.wallbrew/lein-sealog "1.0.2"]
             [lein-project-version "0.1.0"]
             [mvxcvi/cljstyle "0.15.0"]
