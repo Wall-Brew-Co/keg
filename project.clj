@@ -8,7 +8,7 @@
   :scm {:name "git"
         :url  "https://github.com/Wall-Brew-Co/keg"}
   :dependencies [[org.clojure/clojure "1.11.1"]
-                 [org.clojure/tools.logging "1.2.4"]
+                 [org.clojure/tools.logging "1.3.0"]
                  [metrics-clojure "2.10.0"]
                  [robert/hooke "1.3.0"]]
   :plugins [[com.github.clj-kondo/lein-clj-kondo "2024.02.12"]
