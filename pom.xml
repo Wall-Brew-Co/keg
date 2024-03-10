@@ -4,7 +4,7 @@
   <groupId>com.wallbrew</groupId>
   <artifactId>keg</artifactId>
   <packaging>jar</packaging>
-  <version>1.1.1</version>
+  <version>1.1.2</version>
   <name>keg</name>
   <description>A Clojure library built to tap functions to pour runtime data</description>
   <url>https://github.com/Wall-Brew-Co/keg</url>
@@ -20,7 +20,7 @@
     <url>https://github.com/Wall-Brew-Co/keg</url>
     <connection>scm:git:git://github.com/Wall-Brew-Co/keg.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/Wall-Brew-Co/keg.git</developerConnection>
-    <tag>0e0ab798a0d25fbe55fa4e73c9574179afa11354</tag>
+    <tag>fb94bf3fd817055f8f03e001a8f53a0656b2318e</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
