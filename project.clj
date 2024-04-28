@@ -7,7 +7,7 @@
             :comments     "Same-as all Wall-Brew projects."}
   :scm {:name "git"
         :url  "https://github.com/Wall-Brew-Co/keg"}
-  :dependencies [[org.clojure/clojure "1.11.2"]
+  :dependencies [[org.clojure/clojure "1.11.3"]
                  [org.clojure/tools.logging "1.3.0"]
                  [metrics-clojure "2.10.0"]
                  [robert/hooke "1.3.0"]]
