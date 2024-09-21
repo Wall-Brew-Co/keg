@@ -1,4 +1,4 @@
-(defproject com.wallbrew/keg "1.1.2"
+(defproject com.wallbrew/keg "1.2.0"
   :description "A Clojure library built to tap functions to pour runtime data"
   :url "https://github.com/Wall-Brew-Co/keg"
   :license {:name         "MIT"
