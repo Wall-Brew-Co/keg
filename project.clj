@@ -16,7 +16,7 @@
                  [robert/hooke "1.3.0"]]
   :plugins [[com.github.clj-kondo/lein-clj-kondo "2024.08.29"]
             [com.wallbrew/bouncer "1.0.0"]
-            [com.wallbrew/lein-sealog "1.6.0"]
+            [com.wallbrew/lein-sealog "1.7.0"]
             [mvxcvi/cljstyle "0.16.630"]
             [ns-sort/ns-sort "1.0.3"]]
   :deploy-branches ["master"]
