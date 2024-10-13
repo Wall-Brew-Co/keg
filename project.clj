@@ -17,8 +17,7 @@
   :plugins [[com.github.clj-kondo/lein-clj-kondo "2024.09.27"]
             [com.wallbrew/bouncer "1.1.1"]
             [com.wallbrew/lein-sealog "1.8.0"]
-            [mvxcvi/cljstyle "0.16.630"]
-            [ns-sort/ns-sort "1.0.3"]]
+            [mvxcvi/cljstyle "0.16.630"]]
   :deploy-branches ["master"]
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
                                     :username      :env/clojars_user
