@@ -14,7 +14,7 @@
                  [org.clojure/tools.logging "1.3.0"]
                  [metrics-clojure/metrics-clojure "2.10.0"]
                  [robert/hooke "1.3.0"]]
-  :plugins [[com.github.clj-kondo/lein-clj-kondo "2024.09.27"]
+  :plugins [[com.github.clj-kondo/lein-clj-kondo "2024.11.14"]
             [com.wallbrew/bouncer "1.1.1"]
             [com.wallbrew/lein-sealog "1.8.0"]
             [mvxcvi/cljstyle "0.16.630"]]
