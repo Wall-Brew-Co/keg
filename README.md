@@ -5,6 +5,13 @@ keg measures the time it takes functions to execute, uses `clojure/tools.logging
 
 This repository follows the guidelines and standards of the [Wall Brew Open Source Policy.](https://github.com/Wall-Brew-Co/open-source "Our open source guidelines")
 
+## Deprecation Notice
+
+With the advent of [OpenTracing](https://opentracing.io/) and [OpenTelemetry](https://opentelemetry.io/), cross-language and cross-platform performance monitoring and logging has been solved in a much more meaningful and generally applicable way.
+Wall Brew's internal software has begun shifting to these new standards, and we no longer use keg in day-to-day operations.
+You are free to continue using published versions of this library, fork this repository for your own needs, or use any of the code within.
+As of 2025-01-05, this repository will be archived and Wall Brew will no longer support Keg.
+
 ## Dependency
 
 Add the library to your `:dependencies`:
